@@ -55,6 +55,8 @@ input::placeholder {
   align-items: center;
   margin-top: 5%;
   max-width: 75%;
+  padding-left: 20%;
+  padding-right: 7.5%;
 }
 
 .text__wrapper {
@@ -117,6 +119,7 @@ hr {
   color: var(--primaryColor);
   font-size: 10px;
   text-align: center;
+  border-bottom: 1px solid #bcbdbe;
 }
 .registerButton {
   background-color: var(--buttonColor);
@@ -162,6 +165,9 @@ hr {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+}
+.line {
+  border-bottom: 1px solid #bcbdbe;
 }
 .lan,
 .lnk {
