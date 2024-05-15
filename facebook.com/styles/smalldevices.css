@@ -1,8 +1,8 @@
 /* Small Mobile Device */
-@media (max-width: 320px) {
+@media (max-width: 320px) and (orientation: portrait) {
   .main {
     display: grid;
-    margin-top: 10vh;
+    margin-top: 3%;
     justify-content: center;
   }
   .text__wrapper {
@@ -49,6 +49,20 @@
     margin: 0 auto;
   }
   .footer {
+    display: none;
+  }
+}
+@media (max-height: 320px) and (orientation: landscape) {
+  .footer {
+    display: none;
+  }
+  .main {
+    justify-content: center;
+  }
+  .form__wrapper {
+    align-self: center;
+  }
+  .text__wrapper {
     display: none;
   }
 }

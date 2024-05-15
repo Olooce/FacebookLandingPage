@@ -1,8 +1,8 @@
 /* Average Mobile Devices */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
   .main {
     display: grid;
-    margin-top: 10vh;
+    margin-top: 3%;
     justify-content: center;
   }
   .text__wrapper {
@@ -55,6 +55,21 @@
     margin-bottom: 3%;
   }
   .footer {
+    display: none;
+  }
+}
+
+@media (min-height: 320px) and (max-height: 480px) and (orientation: landscape) {
+  .footer {
+    display: none;
+  }
+  .main {
+    justify-content: center;
+  }
+  .form__wrapper {
+    align-self: center;
+  }
+  .text__wrapper {
     display: none;
   }
 }
