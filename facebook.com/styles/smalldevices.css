@@ -1,0 +1,54 @@
+/* Small Mobile Device */
+@media (max-width: 320px) {
+  .main {
+    display: grid;
+    margin-top: 10vh;
+    justify-content: center;
+  }
+  .text__wrapper {
+    width: 100%;
+    margin-right: 3%;
+    margin-top: -5%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .heading > img {
+    width: 300px;
+    position: relative;
+    left: 8%;
+  }
+  .description {
+    margin-bottom: 10%;
+  }
+  .form__wrapper {
+    margin: 0 auto;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .form {
+    margin-top: 2%;
+  }
+  .loginButton {
+    background-color: var(--primaryColor);
+    color: #fff;
+    margin-top: 2%;
+  }
+  .forgotPassword {
+    color: var(--primaryColor);
+    font-size: 10px;
+    text-align: center;
+  }
+  .registerButton {
+    background-color: var(--buttonColor);
+    color: #fff;
+    font-size: 10px;
+    width: 60%;
+    padding: 8px;
+    font-weight: bold;
+    margin: 0 auto;
+  }
+  .footer {
+    display: none;
+  }
+}

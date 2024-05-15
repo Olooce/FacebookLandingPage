@@ -1,0 +1,60 @@
+/* Average Mobile Devices */
+@media (min-width: 320px) and (max-width: 480px) {
+  .main {
+    display: grid;
+    margin-top: 10vh;
+    justify-content: center;
+  }
+  .text__wrapper {
+    width: 100%;
+    margin-right: 3%;
+    margin-top: -5%;
+    text-align: center;
+  }
+  .heading > img {
+    width: 350px;
+    position: relative;
+    left: 8%;
+  }
+  .description {
+    margin-bottom: 5%;
+  }
+  .form__wrapper {
+    width: 80%;
+    height: 75%;
+    margin-left: 3%;
+    position: relative;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .form {
+    margin-top: 2%;
+  }
+  .loginButton {
+    background-color: var(--primaryColor);
+    color: #fff;
+    margin-top: 2%;
+  }
+  .forgotPassword {
+    color: var(--primaryColor);
+    font-size: 10px;
+    text-align: center;
+  }
+  .registerButton {
+    background-color: var(--buttonColor);
+    color: #fff;
+    font-size: 10px;
+    width: 60%;
+    padding: 8px;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  .footer {
+    display: none;
+  }
+}

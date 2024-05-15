@@ -45,62 +45,55 @@ input::placeholder {
   color: #fff;
   padding: 7px;
 }
-.main {
-  /* margin-right: 10px;
-  margin-left: 10px;*/
 
-  margin: auto 0;
+.main-section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  margin: auto 0;
   margin-top: 5%;
   max-width: 100%;
-
-  padding-left: 7.5%;
-
-  padding-right: 7.5%;
+  min-height: 100%;
 }
 
-.text__wrapper {
-  width: 40vw;
-  padding-right: 5px;
-  padding-left: 5px;
-  margin-top: 5%;
+.branding {
+  width: 40%;
+  height: auto;
   display: block;
   flex-direction: column;
-}
-.heading {
-  position: relative;
-  top: -50%;
-  left: -7%;
+  float: left;
 }
 
-.heading > img {
-  width: 460px;
+.img {
+  width: 475px;
   height: auto;
 }
+
 .description {
   color: var(--textColor);
   font-weight: 600;
   font-size: 150%;
   flex-wrap: wrap;
-  /*float: left;*/
 }
-.form__wrapper {
-  height: 270px;
-  width: 270px;
+.panel {
+  width: 40%;
+  height: 75%;
+  margin: auto 0;
+  display: grid;
+  justify-content: center;
+  float: right;
   margin-top: 5%;
   background-color: #fff;
   padding: 10px;
   border-radius: 5px;
   line-height: 150%;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  float: right;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.panel > hr {
+  margin: 20px 0;
+  font-size: x-small;
+  font-weight: 100;
 }
 .form {
   margin-top: 2%;
@@ -108,24 +101,20 @@ input::placeholder {
   width: auto;
   height: auto;
 }
-.loginButton {
+.Log-in-button {
   background-color: var(--primaryColor);
   color: #fff;
   font-size: large;
   margin-top: 2%;
 }
-hr {
-  margin: 20px 0;
-  font-size: x-small;
-  font-weight: 100;
-}
-.forgotPassword {
+.Forgot-Pass {
   color: var(--primaryColor);
   font-size: 10px;
   text-align: center;
   border-bottom: 1px solid #bcbdbe;
 }
-.registerButton {
+
+.Register-button {
   background-color: var(--buttonColor);
   color: #fff;
   font-size: 10px;
@@ -135,12 +124,6 @@ hr {
   margin: 0 auto;
   margin-top: 3%;
   margin-bottom: 3%;
-}
-
-.brand {
-  padding-top: 15%;
-  padding-bottom: 10%;
-  font-size: small;
 }
 
 .footer {
@@ -157,34 +140,23 @@ hr {
   padding: 25px 0px;
   border-top: 1px solid #e9ecef;
 }
-.footer-col {
+
+.footer ul {
   display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  max-width: 75%;
+  flex-direction: row;
 }
 
-.footer-row {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-}
-.line {
-  border-bottom: 1px solid #bcbdbe;
-}
-.lan,
-.lnk {
-  display: inline;
-  padding-right: 0.25cm;
-  font-size: smaller;
-}
 .languages {
   display: inline;
   justify-content: space-between;
   align-items: center;
 }
 
+.footer-link {
+  display: inline;
+  padding-right: 0.25cm;
+  font-size: smaller;
+}
 footer a {
   color: #6c757d;
   text-decoration: none;
@@ -194,12 +166,21 @@ footer a:hover {
   text-decoration: underline;
 }
 
-footer p {
-  padding-top: 10px;
+footer li {
+  list-style: none;
   color: #6c757d;
   font: bold;
   font-size: 12px;
   float: left;
   margin: 0 1rem;
   padding-left: 0;
+  padding-top: 10px;
+}
+
+li a {
+  display: block;
+
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
 }
